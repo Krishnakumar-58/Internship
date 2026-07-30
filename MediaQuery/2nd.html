@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background: navajowhite;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .box
+        {
+            padding: 30px;
+            background: crimson;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 20PX;
+            text-align: center;
+        }
+          h1
+        {
+            color: darkmagenta;
+        }
+        .box::after{content: "screen size: SMALL (0-599PX) -RED";}
+        @media(min-width:600px) and (max-width: 600px)
+        {
+            .box
+            {
+                background: darkslateblue;
+                font-size: 100px;
+            }
+        }
+           @media(min-width:700px)
+        {
+            .box
+            {
+                background: goldenrod;
+    
+            }
+        }
+         @media(min-width:1000px)
+        {
+            .box
+            {
+                background: darkgreen;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>basic media query</h1>
+
+    <div class="box">
+        <p>this is media query</p>
+    </div>
+</body>
+</html>

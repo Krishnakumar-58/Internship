@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background: wheat;
+        }
+        .navbar
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 24px;
+            background: whitesmoke;
+            border-bottom: 1px solid black;
+        }
+        .navbar .logo
+        {
+            font-weight: bold;
+            color: #414141;
+            font-size: 24px;
+        }
+        .navbar .links
+        {
+            display: none;
+            list-style: none;
+            gap: 24px;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar .burger
+        {
+            display: block;
+            background: none;
+            border: 1px solid black;
+            color: olivedrab;
+            cursor: crosshair;
+            border-radius: 6px;
+        }
+        @media (min-width:700px)
+        {
+            .navbar .links{ display: flex;}
+            .navbar .burger{display: none;}
+        }
+         h1
+        {
+            color: rosybrown;
+        }
+        .grid
+        {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+         .gallery
+        {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+        
+        .card
+        {
+            background: purple;
+            color: bisque;
+            border: 1px solid palegreen;
+            border-radius: 10px;
+            padding: 24px;
+        }
+        .card1
+        {
+            /* background: purple; */
+            color: bisque;
+            border: 1px solid palegreen;
+            border-radius: 10px;
+        }
+        .card1 img
+        {
+            height: 100%;
+            width: 100%;
+             border-radius: 10px;
+        }
+        @media (min-width:500px)
+        {
+            .grid{grid-template-columns:repeat(2,1fr);}
+            .gallery{grid-template-columns:repeat(2,1fr);}
+        }
+         @media (min-width:800px)
+        {
+            .grid{grid-template-columns:repeat(3,1fr);}
+            .gallery{grid-template-columns:repeat(3,1fr);}
+        }
+        @media (min-width:1000px)
+        {
+            .grid{grid-template-columns:repeat(4,1fr);}
+            .gallery{grid-template-columns:repeat(4,1fr);}
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Skillmanthan </div>
+            <ul class="links">
+                <li>Home</li>
+                <li>About</li>
+                <li>Products</li>
+                <li>Contact</li>
+            </ul>
+            <button class="burger">Menu</button>
+    </nav>
+    <br><br>
+     <div class="grid">
+        <div class="card"> box 1</div>
+        <div class="card"> box 1</div>
+        <div class="card"> box 1</div>
+        <div class="card"> box 1</div>
+        <div class="card"> box 1</div>
+        <div class="card"> box 1</div>
+        <div class="card"> box 1</div>
+        <div class="card"> box 1</div>
+    </div>
+
+    <br>
+     <div class="gallery">
+        <div class="card1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPS2Q2yHjKfD9ynhy43r-OPHjmub4HE60ayqNWRZkjEg&s=10" alt=""></div>
+        <div class="card1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPS2Q2yHjKfD9ynhy43r-OPHjmub4HE60ayqNWRZkjEg&s=10" alt=""></div>
+        <div class="card1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPS2Q2yHjKfD9ynhy43r-OPHjmub4HE60ayqNWRZkjEg&s=10" alt=""></div>
+        <div class="card1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPS2Q2yHjKfD9ynhy43r-OPHjmub4HE60ayqNWRZkjEg&s=10" alt=""></div>
+        <div class="card1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPS2Q2yHjKfD9ynhy43r-OPHjmub4HE60ayqNWRZkjEg&s=10" alt=""></div>
+        <div class="card1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPS2Q2yHjKfD9ynhy43r-OPHjmub4HE60ayqNWRZkjEg&s=10" alt=""></div>
+        <div class="card1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPS2Q2yHjKfD9ynhy43r-OPHjmub4HE60ayqNWRZkjEg&s=10" alt=""></div>
+        <div class="card1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPS2Q2yHjKfD9ynhy43r-OPHjmub4HE60ayqNWRZkjEg&s=10" alt=""></div>
+    </div>
+</body>
+</html>

@@ -86,20 +86,33 @@
             width: 100%;
              border-radius: 10px;
         }
+         .volume1
+        {
+            background: red;
+            padding: 20px;
+        }
+        .volume2
+        {
+            background: navy;
+            padding: 20px;
+        }
         @media (min-width:500px)
         {
             .grid{grid-template-columns:repeat(2,1fr);}
             .gallery{grid-template-columns:repeat(2,1fr);}
+            .volume1{width: 250px;}
         }
          @media (min-width:800px)
         {
             .grid{grid-template-columns:repeat(3,1fr);}
             .gallery{grid-template-columns:repeat(3,1fr);}
+            .volume1{width: 250px;}
         }
         @media (min-width:1000px)
         {
             .grid{grid-template-columns:repeat(4,1fr);}
             .gallery{grid-template-columns:repeat(4,1fr);}
+            .volume1{width: 250px;}
         }
     </style>
 </head>
@@ -137,5 +150,10 @@
         <div class="card1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPS2Q2yHjKfD9ynhy43r-OPHjmub4HE60ayqNWRZkjEg&s=10" alt=""></div>
         <div class="card1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPS2Q2yHjKfD9ynhy43r-OPHjmub4HE60ayqNWRZkjEg&s=10" alt=""></div>
     </div>
+    <br>
+     <div class="volume1"></div>
+    <div class="volume2"></div>
+    <div class="volume1"></div>
+    <div class="volume2"></div>
 </body>
 </html>

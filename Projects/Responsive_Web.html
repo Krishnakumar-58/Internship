@@ -68,6 +68,68 @@
         .container .box1 img:hover{
             scale: 1.1;
         }
+        .container .box2
+        {
+            padding: 100px;
+        }
+        footer
+        {
+            height: 80px;
+            width: 100%;
+            background: rgb(10, 10, 227);
+        }
+        footer p
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: whitesmoke;
+            padding: 24px;
+        }
+        .gallery
+        {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            padding: 65px;
+            background: rgb(104, 2, 2);
+        }
+        .img1
+        {
+            overflow: hidden;
+            object-fit: cover;
+            /* transition: 1s ease all; */
+        }
+      
+       .gallery img
+        {
+            height: 300px;
+            width: 200px;
+            border: 1px dashed wheat;
+            box-shadow: 1px -1px 15px black;
+            transition: 0.3s ease all;
+            object-fit: cover;
+            
+        }
+        .gallery img:hover
+        {
+            box-shadow: 0px 7px 25px whitesmoke;
+            scale: 1.2;
+        }
+        .contact
+        {
+            background: rebeccapurple;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact input
+        {
+            width: 250px;
+            height: 30px;
+            font-family: 'Segoue UI';
+            
+        }
         @media (min-width:700px)
         {
             .navbar .links{display: flex;}
@@ -76,14 +138,17 @@
         @media (min-width:500px)
         {
             .container{grid-template-columns:repeat(1,1fr);}
+            .gallery{grid-template-columns: repeat(2,1fr);}
         }
         @media (min-width:700px)
         {
             .container{grid-template-columns:repeat(2,1fr);}
+            .gallery{grid-template-columns: repeat(3,1fr);}
         }
         @media (min-width:1000px)
         {
             .container{grid-template-columns:repeat(2,1fr);}
+            .gallery{grid-template-columns: repeat(4,1fr);}
         }
     </style>
 </head>
@@ -98,9 +163,34 @@
         </ul>
         <button class="btn">Menu</button>
     </nav>
+    <marquee behavior="" direction="">Hello world !</marquee>
     <div class="container">
-        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quis ratione impedit iure quibusdam dicta maiores blanditiis, alias quos, suscipit mollitia? Beatae, expedita labore vero rerum voluptates magnam minima dolorem.</div>
+        <div class="box1 box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quis ratione impedit iure quibusdam dicta maiores blanditiis, alias quos, suscipit mollitia? Beatae, expedita labore vero rerum voluptates magnam minima dolorem.</div>
         <div class="box1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_pfCFWP0VNfDu87UnxLp1BQwkRxQBkJVT1gkryBoyVw&s=10" alt=""></div>
     </div>
+    <center><h1>Our Gallery</h1></center>
+    <div class="gallery">
+        <div class="img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgNWddEe0cptKpmMBlTEnjaNgqkaT0sd7LdTyUtKswxw&s=10" alt=""></div>
+        <div class="img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNP5UVFIlZzTtr2MGah30z8LPhXP9CQ5WkZ8KFbHnnEw&s=10" alt=""></div>
+        <div class="img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGg4jFC9au4R-mckz3i78z0DTS0uukkmdvNh78Aq-GWA&s=10" alt=""></div>
+        <div class="img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3H3K71aybW-9rtPKI87n9U-wvM8HRFfXoMz6a5UjGrg&s=10" alt=""></div>
+        <div class="img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHOCa_kPwT3qsiYP3UdeQYYaTBsCLys84yr8AHFE89Hw&s=10" alt=""></div>
+        <div class="img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHcSYJ3cRhCv2_TSraxxvr_uns0hlygU8vm6PcVQg_-g&s=10" alt=""></div>
+        <div class="img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTehtdA1xbVJnutXCFMtRf4Vtk6_d8QBoAfkvExoSNKQ&s=10" alt=""></div>
+        <div class="img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSG781eedPIxYpdAT7sBcSq1IELFuozyscvzAU7pJm9w&s=10" alt=""></div>
+        <div class="img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0JCbWpMH5uDqsmdwpzbWxHIElfLONFmpu3UiJlBKREw&s" alt=""></div>
+    </div>
+    <div class="contact">
+        <form action="">
+            <h1>Contact Page</h1>
+            <input type="text" placeholder="Enter Your Name..."> <br> <br>
+            <input type="email" placeholder="Enter Your Email Here....."> <br> <br>
+            <textarea name="" cols="32" rows="8" id="" placeholder="Enter Message Here....."></textarea> <br><br>
+            <input type="submit" value="Submit"> <br><br> <br>
+        </form>
+    </div>
+    <footer>
+        <p>@Copyrights All Rights Reserved --> Created By Krishna Kumar</p>
+    </footer>
 </body>
 </html>

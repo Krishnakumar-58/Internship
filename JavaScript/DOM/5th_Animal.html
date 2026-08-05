@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+     function lion()
+{
+    document.getElementById("img").src="image/lion.png";
+}
+    function catimg()
+{
+    document.getElementById("img").src="image/cat.png";
+}
+    function Tiger()
+{
+    document.getElementById("img").src="image/tiger.png";
+}
+    function dog()
+{
+    document.getElementById("img").src="image/dog.png";
+}
+    function elephant()
+{
+    document.getElementById("img").src="image/elephant.png";
+    speechSynthesis.speak(elephant);
+}
+   
+    </script>
+    <style>
+        button
+        {
+            background: blue;
+            border: none;
+            color: white;
+            padding: 10px;
+            width: 70px;
+            margin: 3px;
+            border-radius: 4px;
+        }
+        img
+        {
+            border-radius: 10px;
+            box-shadow: 4px 10px 50px black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Janwar Gallary</h1>
+    <button onclick="lion()">Sher</button>
+    <button onclick="catimg()">Billi</button>
+    <button onclick="Tiger()">Chita</button>
+    <button onclick="dog()">Kukur</button>
+    <button onclick="elephant()">Hathi</button>
+    <br> <br>
+    <img id="img" src="image/lion.png" height="300px" width="400px"></center>
+    
+</body>
+</html>

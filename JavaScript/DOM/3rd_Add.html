@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function add()
+        {
+           var a=document.getElementById("t1").value;
+           var b=document.getElementById("t2").value;
+           a=parseInt(a);
+           b=parseInt(b);
+           var c=a+b;
+           document.getElementById("t3").value=c;
+           document.getElementById("t3").style.color="red";
+        }
+         function sub()
+        {
+           var a=document.getElementById("t1").value;
+           var b=document.getElementById("t2").value;
+           a=parseInt(a);
+           b=parseInt(b);
+           var c=a-b;
+           document.getElementById("t3").value=c;
+           document.getElementById("t3").style.color="red";
+        }
+         function mul()
+        {
+           var a=document.getElementById("t1").value;
+           var b=document.getElementById("t2").value;
+           a=parseInt(a);
+           b=parseInt(b);
+           var c=a*b;
+           document.getElementById("t3").value=c;
+           document.getElementById("t3").style.color="red";
+        }
+    </script>
+</head>
+<body>
+    Enrer first number: <input type="text" id="t1" placeholder="enter first number:">
+    <br> <br>
+    neter second number: <input type="text" id="t2" placeholder="enter second number:">
+    <br> <br>
+     Result: <input type="text" id="t3">
+     <br> <br>
+     <button onclick="add()">Add</button>
+     <button onclick="sub()">sub</button>
+      <button onclick="mul()">mul</button>
+</body>
+</html>

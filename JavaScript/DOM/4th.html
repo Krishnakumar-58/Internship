@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script>
+        function square()
+        {
+            var a=document.getElementById("t1").value;
+            a=parseInt(a);
+            square=a*a;
+            document.getElementById("t2").value=square;
+        }
+        function cube()
+        {
+            var a=document.getElementById("t1").value;
+            a=parseInt(a);
+            cube=a**a;
+            document.getElementById("t2").value=cube;
+        }
+    </script>
+</head>
+<body>
+    enter a number <input type="text" id="t1">
+    <br> <br>
+    Result: <input id="t2" type="text">
+    <br><br>
+    <button onclick="square()">square</button>
+    &nbsp;
+    <button onclick="cube()">cube</button>
+</body>
+</html>

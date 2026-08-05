@@ -10,3 +10,4 @@ console.log(name.toLowerCase());
 console.log(name.includes("ski"));
 let language="javascript";
 console.log(language.slice(4,10))
+

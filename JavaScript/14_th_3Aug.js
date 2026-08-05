@@ -1,4 +1,4 @@
-const prompt=require('promp-sync')();
+const prompt=require('prompt-sync')();
 let name = prompt ("enter your name")
 let output=name.split(" ").map(word=>word[0]).join("")
 console.log(output)
@@ -8,4 +8,5 @@ console.log(output)
 let msg = "good morning";
 console.log(msg.replace("morning","evening"))
 let skills = "html,css,js";
-console.log
+console.log(skills.split(",")
+)

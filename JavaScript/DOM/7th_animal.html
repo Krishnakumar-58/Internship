@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animal Gallery</title>
+
+    <script>
+        function speak(name) {
+            let speech = new SpeechSynthesisUtterance(name);
+            speech.lang = "hi-IN";
+            speech.rate = 1;
+            speech.pitch = 1;
+            speechSynthesis.speak(speech);
+        }
+
+        function lion() {
+            document.getElementById("img").src = "image/lion.png";
+            speak("Sher");
+        }
+
+        function catimg() {
+            document.getElementById("img").src = "image/cat.png";
+            speak("Billi");
+        }
+
+        function Tiger() {
+            document.getElementById("img").src = "image/tiger.png";
+            speak("Cheeta");
+        }
+
+        function dog() {
+            document.getElementById("img").src = "image/dog.png";
+            speak("Kukur");
+        }
+
+        function elephant() {
+            document.getElementById("img").src = "image/elephant.png";
+            speak("Hathi");
+        }
+    </script>
+
+    <style>
+        button {
+            background: blue;
+            border: none;
+            color: white;
+            padding: 10px;
+            width: 70px;
+            margin: 3px;
+            border-radius: 4px;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 4px 10px 50px black;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Janwar Gallery</h1>
+
+        <button onclick="lion()">Sher</button>
+        <button onclick="catimg()">Billi</button>
+        <button onclick="Tiger()">Cheeta</button>
+        <button onclick="dog()">Kukur</button>
+        <button onclick="elephant()">Hathi</button>
+
+        <br><br>
+
+        <img id="img" src="image/lion.png" height="300" width="400">
+    </center>
+</body>
+</html>

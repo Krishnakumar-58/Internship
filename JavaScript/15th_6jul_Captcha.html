@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>captcha code</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture</title>
+    <style>
+        #t1 {
+            background-image: url(DOM/image/image.png);
+            width: 80px;
+            color: whitesmoke;
+        }
+    </style>
     <script>
-        function getrandom(min,max)
-        {
-            var a=Math.random();
-            var b=a*(max-min)+min;
-            b=parseInt(b)
+        function getrandom(min, max) {
+            var a = Math.random();
+            var b = a * (max - min) + min;
+            b = parseInt(b);
             return b;
         }
-        function generate()
-        {
-            var a = getrandom(0,9);
-            var b = String.fromCharCode(getrandom(97,122))
-            var c = String.fromCharCode(getrandom(65,90))
-            var d = getrandom(0,9);
-            var e = String.fromCharCode(getrandom(97,122))
-            var f = String.fromCharCode(getrandom(65,90))
-            var code = a+b+c+d+e+f;
-            document.getElementById("t1").innerHTML=code;
-            document.getElementById("t1").style.fontStyle="italic";
+        function generate() {
+            var a = getrandom(1, 9);
+            var b = String.fromCharCode(getrandom(97, 122))
+            var c = String.fromCharCode(getrandom(65, 90))
+            var d = getrandom(1, 9);
+            var e = String.fromCharCode(getrandom(97, 122))
+            var f = String.fromCharCode(getrandom(65, 90))
+            var code = a + b + c + d + e + f;
+
+            document.getElementById("t1").innerHTML = code;
+            document.getElementById("t1").style.fontStyle = "italic";
         }
+
     </script>
 </head>
+
 <body>
     <p id="t1"></p>
-    <button onclick"generate()">Generate</button>
+    <button onclick="generate()">Generate</button>
 </body>
+
 </html>

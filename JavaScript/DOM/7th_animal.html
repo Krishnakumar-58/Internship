@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <title>Animal Gallery</title>
-
     <script>
         function speak(name) {
             let speech = new SpeechSynthesisUtterance(name);
@@ -11,33 +10,27 @@
             speech.pitch = 1;
             speechSynthesis.speak(speech);
         }
-
         function lion() {
             document.getElementById("img").src = "image/lion.png";
             speak("Sher");
         }
-
         function catimg() {
             document.getElementById("img").src = "image/cat.png";
             speak("Billi");
         }
-
         function Tiger() {
             document.getElementById("img").src = "image/tiger.png";
             speak("Cheeta");
         }
-
         function dog() {
             document.getElementById("img").src = "image/dog.png";
             speak("Kukur");
         }
-
         function elephant() {
             document.getElementById("img").src = "image/elephant.png";
             speak("Hathi");
         }
     </script>
-
     <style>
         button {
             background: blue;

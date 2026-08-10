@@ -21,6 +21,6 @@ getdata()
         console.log("Daata get:  ")
         console.log(data.name)
         console.log(data.email)
-    }).catch(function (error) {
-        console.log(error)
+    }).catch(function (error) { 
+        console.log(error) 
     })

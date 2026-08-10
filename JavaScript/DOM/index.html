@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guess game</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .game {
+            background: white;
+            padding: 30px;
+            width: 350px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #msg {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        #restart {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game">
+        <h3>Guess the Number Game</h3>
+        <p>Guess a Number between 1 to 10</p>
+        <p>Chance: <span id="chance">5</span></p>
+        <button id="restart" onclick="refresh()">Restart</button>
+        <input type="number" id="guess" required placeholder="Enter Number">
+        <br>
+        <br>
+        <button onclick="Checkguess()">Guess</button>
+        <p id="msg"></p>
+        <p>Attempts: <span id="attempts">0</span></p>
+        <p>Made By KRISHNA KUMAR</p>
+    </div>
+    <script>
+        let randomNumber = Math.floor(Math.random() * 10) + 1;
+        let attempts = 0;
+        let maxChance = 5;
+        let leftChance = 5;
+
+        function refresh() {
+            attempts = 0;
+            leftChance = maxChance;
+            document.getElementById("chance").innerText = leftChance;
+            document.getElementById("attempts").innerText = attempts;
+            document.getElementById("restart").style.display = "none";
+            document.getElementById("msg").innerText = " ";
+            document.getElementById("guess").value = "";
+            randomNumber = Math.floor(Math.random() * 10) + 1;
+        }
+
+        function Checkguess() {
+            
+            if (leftChance <= 0) {
+                document.getElementById("msg").innerText = "Game Over";
+                document.getElementById("restart").style.display = "inline";
+                return
+            }
+            let guess = Number(document.getElementById("guess").value);
+            if(!guess){
+                return alert("Please enter a number")
+            }
+            attempts++;
+            leftChance--
+            document.getElementById("chance").innerText = leftChance;
+            document.getElementById("attempts").innerText = attempts;
+            if (randomNumber === guess) {
+                setTimeout(function(){
+                    refresh()
+                }, 4000)
+                document.getElementById("msg").innerText = "Correct! You won"
+                
+            } else if (guess < randomNumber) {
+                document.getElementById("msg").innerText = "Too low try High "
+            } else {
+                document.getElementById("msg").innerText = "Too high try Low"
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+component: navbar , card ,
+utility : mr-5 mt mb 
+1.contaienr: content align center, and give padding left-right
+2. row: make a group for columns, horizontal
+3. col-4: 12/4= 3 columns 
+
+ navbar classes:
+    1. navbar: create base of navbar
+    2. navbar-expand-lg: large screen pr horizontal, small screen
+    humberger
+    3.navbar-dark /bg-dark:dark bg + text white
+    4.navbar-brand: logo/brand name style
+    5.nav-link: menu ke individual links
+    
+button+utility classes
+    1. btn: base button class (padding, border-radius)
+    2. btn-primary, btn-success, btn-danger
+    3. btn-outline-dark: sirf border hota hai background transparent rahta hai 
+    4. m-1: margin(utility class)-number 0 to 5
+Card classes:
+    1. card: box jisme border+shadow hota hai
+    2. card-body: ander ka padding wala content
+    3. card-title: heading style
+    4. card-text: paragraph styling 
+Form + alert classes:
+    1. form-label: styling for label 
+    2. form-control: padding and border of input box 
+    3. mb-3: 
+    4. alert alert-info: give message in a color(success, warning, error)

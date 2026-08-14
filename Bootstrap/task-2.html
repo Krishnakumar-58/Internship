@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <style>
+        .location-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 25px;
+            background: #0E3A42;
+            border: 1px solid #126A70;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-top: 80px;
+        }
+
+        .location-badge .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #43D8C8;
+
+            box-shadow: 0 0 4px #43D8C8, 0 0 9px rgba(67, 216, 200, 0.8), 0 0 15px rgba(67, 216, 200, 0.4);
+        }
+
+        .border-box:hover {
+            border-color: aqua !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- navbar start -->
+        <section class="navbar-section ">
+            <nav class="navbar navbar-expand-lg" style="background: #0b1020;">
+                <img src="image/logo.png" alt="" style="height: 50px; width: 150px;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link active text-white" aria-current="page"
+                                href="#eligibility">Eligibility</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#program">Program</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#curriculum">Curriculum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#placement">Placements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search" style="gap: 10px; margin-right: 30px;">
+                        <button class="btn border-info-subtle text-info " type="submit">Whatsapp</button>
+                        <button class="btn bg-warning text-dark" type="submit">Ragister Now</button>
+                    </form>
+                </div>
+
+            </nav>
+        </section>
+        <!-- hero Section start -->
+        <section class="hero" style=" background:#142b31; ">
+            <div class="row">
+                <div class="col-sm-1">
+                    <!-- empty -->
+                </div>
+                <div class="col-sm-10">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="location-badge">
+                                <span class="dot"></span>
+                                summer_training.init() — Lucknow, 2026
+                            </div>
+                            <h1 class="heading text-light  fw-bold p-1 mx-auto px-0 mt-4" style="font-size: 45px;">
+                                Summer Training in
+                                Lucknow for <span class="span text-warning ">BCA, B.Tech, Polytechnic & BSc CS</span>
+                                students</h1>
+                            <p class="paragraph text-white-50 mt-0 px-0">45–60 days of hands-on training in MERN,
+                                Python, Java, Flutter, Data Analytics & more — with live projects,
+                                mentorship from industry experts, and placement support.</p>
+                            <p class="paragraph text-info fw-bold">// Seat limited hai — apna batch aaj hi book karein.
+                            </p>
+                            <div class="button d-flex flex-wrap gap-2">
+                                <a href="#" class="btn btn-warning p-2">
+                                    🚀 Register Now — ₹5,000
+                                </a>
+
+                                <a href="#" class="btn border border-info-subtle text-light">
+                                    📞 Call: +91-6392-361-443
+                                </a>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="border-2 display-flex mb-4">
+                                    <span
+                                        class="badge rounded-pill border border-secondary text-secondary fw-normal px-2 py-1">MCA
+                                        Registered</span>
+                                    <span
+                                        class="badge rounded-pill border border-secondary text-secondary fw-normal px-2 py-1">ISO
+                                        9001:2015</span>
+                                    <span
+                                        class="badge rounded-pill border border-secondary text-secondary fw-normal px-2 py-1">Startup
+                                        India</span>
+                                    <span
+                                        class="badge rounded-pill border border-secondary text-secondary fw-normal px-2 py-1">50+
+                                        Hiring Partners</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 my-auto">
+                            <div class="card bg-dark bg-opacity-25 border-secondary rounded-3 overflow-hidden pb-5">
+                                <!-- Terminal Header -->
+                                <div
+                                    class="card-header bg-secondary bg-opacity-25 border-secondary d-flex align-items-center gap-2 py-2">
+                                    <span class="rounded-circle bg-danger d-inline-block"
+                                        style="width:10px; height:10px;"></span>
+                                    <span class="rounded-circle bg-warning d-inline-block"
+                                        style="width:10px; height:10px;"></span>
+                                    <span class="rounded-circle bg-success d-inline-block"
+                                        style="width:10px; height:10px;"></span>
+                                    <span class="text-secondary ms-2 font-monospace small">
+                                        eligibility_check.sh
+                                    </span>
+                                </div>
+                                <!-- Terminal Body -->
+                                <div class="card-body font-monospace text-light p-4">
+                                    <div class="text-info mb-3">
+                                        $ <span class="text-light">whoami --branch</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary">→</span>
+                                        <span id="branchText" class="text-warning"></span>
+                                        <span class="text-info">|</span>
+                                    </div>
+                                </div>
+                                <script>
+                                    const branches = [
+                                        "BCA - eligible ✓",
+                                        "Polytechnic / Diploma - eligible ✓",
+                                        "BSc CS - eligible ✓",
+                                        "B. Tech (CS/IT) - eligible ✓"
+                                    ];
+                                    const branchText = document.getElementById("branchText");
+                                    let branchIndex = 0;
+                                    let letterIndex = 0;
+                                    let deleting = false;
+                                    function typeEffect() {
+                                        const text = branches[branchIndex];
+                                        if (!deleting) {
+                                            branchText.textContent = text.substring(0, letterIndex + 1);
+                                            letterIndex++;
+                                            if (letterIndex === text.length) {
+                                                deleting = true;
+                                                setTimeout(typeEffect, 1500);
+                                                return;
+                                            }
+                                            setTimeout(typeEffect, 80);
+                                        } else {
+                                            branchText.textContent = text.substring(0, letterIndex - 1);
+                                            letterIndex--;
+                                            if (letterIndex === 0) {
+                                                deleting = false;
+                                                branchIndex = (branchIndex + 1) % branches.length;
+                                                setTimeout(typeEffect, 500);
+                                                return;
+                                            }
+                                            setTimeout(typeEffect, 50);
+                                        }
+                                    }
+                                    typeEffect();
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+            </div>
+            <div class="container-fluid overflow-hidden py-4 bg-dark bg-opacity-25 border border-dark-subtle">
+                <div id="imageTrack" class="d-flex gap-3 ">
+                    <img src="image/c++.png" class="rounded-3 object-fit-cover" width="200" height="120">
+                    <img src="image/angular.png" class="rounded-3 object-fit-cover" width="200" height="120">
+                    <img src="image/python.png" class="rounded-3 object-fit-cover" width="200" height="120">
+                    <img src="image/java.png" class="rounded-3 object-fit-cover" width="200" height="120">
+                    <img src="image/react.png" class="rounded-3 object-fit-cover" width="200" height="120">
+                    <img src="image/node-js.png" class="rounded-3 object-fit-cover" width="200" height="120">
+                    <img src="image/php.png" class="rounded-3 object-fit-cover" width="200" height="120">
+                    <img src="image/android.png" class="rounded-3 object-fit-cover" width="200" height="120">
+                    <img src="image/flutter.png" class="rounded-3 object-fit-cover" width="200" height="120">
+                    <img src="image/next-js.png" class="rounded-3 object-fit-cover" width="200" height="120">
+                    <img src="image/laravel.png" class="rounded-3 object-fit-cover" width="200" height="120">
+                    <img src="image/mysql.png" class="rounded-3 object-fit-cover" width="200" height="120">
+                </div>
+            </div>
+            <script>
+                const track = document.getElementById("imageTrack");
+                let position = 0;
+                function moveImages() {
+                    position -= 1;
+                    track.style.transform = `translateX(${position}px)`;
+                    if (Math.abs(position) >= track.children[0].offsetWidth + 16) {
+                        track.appendChild(track.children[0]);
+                        position += track.children[0].offsetWidth + 16;
+                        track.style.transform = `translateX(${position}px)`;
+                    }
+                    requestAnimationFrame(moveImages);
+                }
+                moveImages();
+            </script>
+            <div class="row">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-10">
+                    <p class="text text-warning text-uppercase mt-5 mb-4" id="eligibility">Who this is for</p>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h1 class="heading text-light fw-bold lh-base mt-0 display-6">Made for every branch of CS
+                                student in Lucknow</h1>
+                            <p class="text-secondary">Chahe aap kisi bhi course mein ho, hamara curriculum aapke
+                                academic level ke hisaab se customized hai.</p>
+                        </div>
+                        <div class="col-sm-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-10">
+                    <div class="row my-5">
+                        <div class="col-sm-3">
+                            <div class="border-box bg-dark bg-opacity-25 border border-secondary p-2 rounded-3">
+                                <div class="head d-flex justify-content-between fs-6 fw-bold">
+                                    <p class="text-warning">bca</p>
+                                    <span class="text-info">.js</span>
+                                </div>
+                                <h5 class="text-light fs-6 fw-semibold">BCA Students</h5>
+                                <p class="text-secondary small">Web & app development fundamentals with MERN/PHP stack,
+                                    aligned to your semester syllabus.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="border-box bg-dark bg-opacity-25 border border-secondary p-2 rounded-3">
+                                <div class="head d-flex justify-content-between fs-6 fw-bold">
+                                    <p class="text-warning">bca</p>
+                                    <span class="text-info">.js</span>
+                                </div>
+                                <h5 class="text-light fs-6 fw-semibold">BCA Students</h5>
+                                <p class="text-secondary small">Web & app development fundamentals with MERN/PHP stack,
+                                    aligned to your semester syllabus.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="border-box bg-dark bg-opacity-25 border border-secondary p-2 rounded-3">
+                                <div class="head d-flex justify-content-between fs-6 fw-bold">
+                                    <p class="text-warning">bca</p>
+                                    <span class="text-info">.js</span>
+                                </div>
+                                <h5 class="text-light fs-6 fw-semibold">BCA Students</h5>
+                                <p class="text-secondary small">Web & app development fundamentals with MERN/PHP stack,
+                                    aligned to your semester syllabus.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="border-box border bg-dark bg-opacity-25 border-secondary p-2 rounded-3">
+                                <div class="head d-flex justify-content-between fs-6 fw-bold">
+                                    <p class="text-warning">bca</p>
+                                    <span class="text-info">.js</span>
+                                </div>
+                                <h5 class="text-light fs-6 fw-semibold">BCA Students</h5>
+                                <p class="text-secondary small">Web & app development fundamentals with MERN/PHP stack,
+                                    aligned to your semester syllabus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+            </div>
+        </section>
+        <hr class="text-secondary my-0 ">
+        <section class="hero-2 pb-6" style="background:#142b31;">
+            <div class="row pb-5">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-10">
+                    <p class="text text-warning text-uppercase mt-5 mb-4 small fw-semibold" id="program">Program details
+                    </p>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h1 class="heading text-light fw-bold lh-base mt-0 display-6">Everything included in one
+                                affordable fee</h1>
+                            <p class="text-secondary">Transparent pricing, no hidden charges — built to fit a student's
+                                budget.</p>
+                        </div>
+                        <div class="container py-5">
+                            <div
+                                class="row g-0 border border-secondary rounded-3 overflow-hidden bg-dark bg-opacity-10 text-light">
+                                <div class="col-12 col-md-3 p-4 border-end border-bottom border-secondary">
+                                    <small class="text-secondary text-uppercase">Duration</small>
+                                    <h5 class="mt-3 mb-0">45-60 Days</h5>
+                                </div>
+                                <div class="col-12 col-md-3 p-4 border-end border-bottom border-secondary">
+                                    <small class="text-secondary text-uppercase">Fees</small>
+                                    <h5 class="mt-3 mb-0 text-info">₹ 5,000</h5>
+                                </div>
+                                <div class="col-12 col-md-3 p-4 border-end border-bottom border-secondary">
+                                    <small class="text-secondary text-uppercase">Class Hours</small>
+                                    <h5 class="mt-3 mb-0">5 Hrs / Day</h5>
+                                </div>
+                                <div class="col-12 col-md-3 p-4 border-bottom border-secondary">
+                                    <small class="text-secondary text-uppercase">Mode</small>
+                                    <h5 class="mt-3 mb-0">Online / Offline</h5>
+                                </div>
+                                <div class="col-12 col-md-3 p-4 border-end border-secondary">
+                                    <small class="text-secondary text-uppercase">Portal Access</small>
+                                    <h5 class="mt-3 mb-0">1 Year</h5>
+                                </div>
+                                <div class="col-12 col-md-3 p-4 border-end border-secondary">
+                                    <small class="text-secondary text-uppercase">Web Hosting</small>
+                                    <h5 class="mt-3 mb-0">Free</h5>
+                                </div>
+                                <div class="col-12 col-md-3 p-4 border-end border-secondary">
+                                    <small class="text-secondary text-uppercase">Project File</small>
+                                    <h5 class="mt-3 mb-0">Included</h5>
+                                </div>
+                                <div class="col-12 col-md-3 p-4">
+                                    <small class="text-secondary text-uppercase">Recovery Classes</small>
+                                    <h5 class="mt-3 mb-0">Included</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="div col-sm-1">
+                </div>
+            </div>
+        </section>
+        <section class="hero-3 pb-6" style="background:#142b31;">
+            <div class="row">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-10">
+                    <p class="text text-warning text-uppercase mt-5 mb-4 small fw-semibold">Why SkillManthon</p>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h1 class="heading text-light fw-bold lh-base mt-0 display-6">Real skills over certificates
+                            </h1>
+                            <p class="text-secondary">Practical, project-based learning that actually prepares you for
+                                placements.</p>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div
+                                class="right-box bg-info bg-opacity-25 border border-info p-5 rounded-3 mt-5 mb-5 text-opacity-25">
+                                <h5 class="heading text-info text-uppercase fw-semibold small">SkillManthon</h5>
+                                <div class="tick d-flex gap-3 mt-4 lh-1">
+                                    <span class="text-info fw-bold small">✓</span>
+                                    <span class="text-light small">Affordable fees, no compromise on quality</span>
+                                </div>
+                                <hr class="text-light px-5">
+                                <div class="tick d-flex gap-3 mt-0 lh-1">
+                                    <span class="text-info fw-bold small">✓</span>
+                                    <span class="text-light small">Trainers with real industry experience</span>
+                                </div>
+                                <hr class="text-light px-5">
+                                <div class="tick d-flex gap-3 mt-0 lh-1">
+                                    <span class="text-info fw-bold small">✓</span>
+                                    <span class="text-light small">100% practical, project-based learning</span>
+                                </div>
+                                <hr class="text-light px-5">
+                                <div class="tick d-flex gap-3 mt-0 lh-1">
+                                    <span class="text-info fw-bold small">✓</span>
+                                    <span class="text-light small">Live client-style projects, real portfolio</span>
+                                </div>
+                                <hr class="text-light px-5">
+                                <div class="tick d-flex gap-3 mt-0 lh-1">
+                                    <span class="text-info fw-bold small">✓</span>
+                                    <span class="text-light small">Dedicated placement & interview prep</span>
+                                </div>
+                                <hr class="text-light px-5">
+                                <div class="tick d-flex gap-3 mt-0 lh-1">
+                                    <span class="text-info fw-bold small">✓</span>
+                                    <span class="text-light small">Modern stack: MERN, Next.js, DSA, AI/ML</span>
+                                </div>
+                                <hr class="text-light px-5">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="right-box border border-secondary p-5 rounded-3 mt-5 mb-5">
+                                <h5 class="heading text-secondary text-uppercase fw-bold small">Typical institutes</h5>
+                                <div class="tick d-flex gap-3 mt-4 lh-1">
+                                    <span class="text-danger text-opacity-50 small">✕</span>
+                                    <span class="text-secondary fw-normal small">High fees, theory-heavy sessions</span>
+                                </div>
+                                <hr class="text-light px-5">
+                                <div class="tick d-flex gap-3 mt-0 lh-1">
+                                    <span class="text-danger text-opacity-50 small">✕</span>
+                                    <span class="text-secondary fw-normal small">Interns or unexperienced
+                                        trainers</span>
+                                </div>
+                                <hr class="text-light px-5">
+                                <div class="tick d-flex gap-3 mt-0 lh-1">
+                                    <span class="text-danger text-opacity-50 small">✕</span>
+                                    <span class="text-secondary fw-normal small">Outdated curriculum</span>
+                                </div>
+                                <hr class="text-light px-5">
+                                <div class="tick d-flex gap-3 mt-0 lh-1">
+                                    <span class="text-danger text-opacity-50 small">✕</span>
+                                    <span class="text-secondary fw-normal small">No real client projects</span>
+                                </div>
+                                <hr class="text-light px-5">
+                                <div class="tick d-flex gap-3 mt-0 lh-1">
+                                    <span class="text-danger text-opacity-50 small">✕</span>
+                                    <span class="text-secondary fw-normal small">Little to no placement support</span>
+                                </div>
+                                <hr class="text-light px-5">
+                                <div class="tick d-flex gap-3 mt-0 lh-1">
+                                    <span class="text-danger text-opacity-50 small">✕</span>
+                                    <span class="text-secondary fw-normal small">Old programming stack still
+                                        taught</span>
+                                </div>
+                                <hr class="text-light px-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+            </div>
+        </section>
+        <hr class="text-secondary my-0 ">
+        <section class="hero-3 pb-5" style="background:#142b31;">
+            <div class="row pb-5">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-10">
+                    <p class="text text-warning text-uppercase mt-5 mb-4 small fw-semibold" id="curriculum">How the
+                        training runs</p>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h1 class="heading text-light fw-bold lh-base mt-0 display-6">From fundamentals to a
+                                deployed project</h1>
+                            <p class="text-secondary">A structured path so you leave with a certificate and a working
+                                project — not just notes.</p>
+                        </div>
+                        <div class="col-sm-4">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 pb-5">
+                            <div class="path mb-4 mt-5 lh-1">
+                                <div class="heding d-flex gap-4 text-light">
+                                    <span
+                                        class="text-info border border-info bg-dark bg-opacity-10 rounded-circle p-1 px-2 small">1</span>
+                                    <h5 class="fw-semibold fs-6">Foundations</h5>
+                                </div>
+                                <div class="text-secondary ms-5">
+                                    <span>Programming fundamentals, tools setup, and orientation on your chosen tech
+                                        track.</span>
+                                </div>
+                            </div>
+                            <div class="path mb-4 lh-1">
+                                <div class="heding d-flex gap-4 text-light">
+                                    <span
+                                        class="text-info border border-info bg-dark bg-opacity-10 rounded-circle p-1 px-2 small">2</span>
+                                    <h5 class="fw-semibold fs-6">Core stack training</h5>
+                                </div>
+                                <div class="text-secondary ms-5">
+                                    <span>Hands-on sessions in your selected technology — MERN, Python, Java, Flutter,
+                                        or Data Analytics.</span>
+                                </div>
+                            </div>
+                            <div class="path mb-4 lh-1">
+                                <div class="heding d-flex gap-4 text-light">
+                                    <span
+                                        class="text-info border border-info bg-dark bg-opacity-10 rounded-circle p-1 px-2 small">3</span>
+                                    <h5 class="fw-semibold fs-6">Live project build</h5>
+                                </div>
+                                <div class="text-secondary ms-5">
+                                    <span>Apply what you learn to a real, deployable project under mentor
+                                        guidance.</span>
+                                </div>
+                            </div>
+                            <div class="path mb-4 lh-1">
+                                <div class="heding d-flex gap-4 text-light">
+                                    <span
+                                        class="text-info border border-info bg-dark bg-opacity-10 rounded-circle p-1 px-2 small">4</span>
+                                    <h5 class="fw-semibold fs-6">Deployment & hosting</h5>
+                                </div>
+                                <div class="text-secondary ms-5">
+                                    <span>Ship your project live with free hosting included, and prepare your project
+                                        report/file.</span>
+                                </div>
+                            </div>
+                            <div class="path mb-4 lh-1">
+                                <div class="heding d-flex gap-4 text-light">
+                                    <span
+                                        class="text-info border border-info bg-dark bg-opacity-10 rounded-circle p-1 px-2 small">5</span>
+                                    <h5 class="fw-semibold fs-6">Mock interviews</h5>
+                                </div>
+                                <div class="text-secondary ms-5">
+                                    <span>Resume review and interview practice to get you placement-ready.</span>
+                                </div>
+                            </div>
+                            <div class="path mb-4 lh-1">
+                                <div class="heding d-flex gap-4 text-light">
+                                    <span
+                                        class="text-info border border-info bg-dark bg-opacity-10 rounded-circle p-1 px-2 small">6</span>
+                                    <h5 class="fw-semibold fs-6">Certification</h5>
+                                </div>
+                                <div class="text-secondary ms-5">
+                                    <span>Receive a verified certificate, shareable on LinkedIn and your resume.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+            </div>
+        </section>
+        <section class="placement pb-6" style="background:#142b31;">
+            <div class="row">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-10">
+                    <p class="text text-warning text-uppercase mt-5 mb-4 small fw-semibold " id="placement">Trusted by
+                        students &
+                        companies</p>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h1 class="heading text-light fw-bold lh-base mt-0 display-6">Placement support that goes
+                                beyond a certificate</h1>
+                            <div class="row mt-5">
+                                <div class="col-sm-4">
+                                    <h1 class="text-warning mt-5 fw-bold fs-2">45-60</h1>
+                                    <span class="text-secondary small">Hiring partner companies</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <h1 class="text-warning mt-5 fw-bold fs-2">50+</h1>
+                                    <span class="text-secondary small">Days, live project included</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <h1 class="text-warning mt-5 fw-bold fs-2">1 Yr</h1>
+                                    <span class="text-secondary small">Online portal access</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+            </div>
+            <div class="row d-flex mt-5 mb-2 mx-5 gap-1">
+                <div class="col-sm-2">
+                    <img src="image/p1.png" alt="" height="100" width="150" class="object-fit-cover rounded-3">
+                </div>
+                <div class="col-sm-2">
+                    <img src="image/p2.png" alt="" height="100" width="150" class="object-fit-cover rounded-3">
+                </div>
+                <div class="col-sm-2">
+                    <img src="image/p3.png" alt="" height="100" width="150" class="object-fit-cover rounded-3">
+                </div>
+                <div class="col-sm-2">
+                    <img src="image/p4.png" alt="" height="100" width="150" class="object-fit-cover rounded-3">
+                </div>
+                <div class="col-sm-2">
+                    <img src="image/p5.png" alt="" height="100" width="150" class="object-fit-cover rounded-3">
+                </div>
+                <div class="col-sm-2">
+                </div>
+            </div>
+            <div class="row d-flex  pb-5 mx-5 gap-1">
+                <div class="col-sm-2">
+                    <img src="image/p6.png" alt="" height="100" width="150" class="object-fit-cover rounded-3">
+                </div>
+                <div class="col-sm-2">
+                    <img src="image/p7.png" alt="" height="100" width="150" class="object-fit-cover rounded-3">
+                </div>
+                <div class="col-sm-2">
+                    <img src="image/p8.png" alt="" height="100" width="150" class="object-fit-cover rounded-3">
+                </div>
+                <div class="col-sm-2">
+                    <img src="image/p9.png" alt="" height="100" width="150" class="object-fit-cover rounded-3">
+                </div>
+            </div>
+            <div class="img mx-5">
+                <div class="row d-flex mt-2 pb-5 gap-3">
+                    <div class="col-sm-1 ">
+                        <img src="image/mca.png" alt="" height="50" width="90" class="object-fit-cover rounded-3">
+                    </div>
+                    <div class="col-sm-1 ">
+                        <img src="image/iso.png" alt="" height="50" width="90" class="object-fit-cover rounded-3">
+                    </div>
+                    <div class="col-sm-1 ">
+                        <img src="image/startup.png" alt="" height="50" width="100" class="object-fit-cover rounded-3">
+                    </div>
+                    <div class="col-sm-1 ">
+                        <img src="image/msme.png" alt="" height="50" width="90" class="object-fit-cover rounded-3">
+                    </div>
+                    <div class="col-sm-1 ">
+                        <img src="image/gem.png" alt="" height="50" width="90" class="object-fit-cover rounded-3">
+                    </div>
+                    <div class="col-sm-1 ">
+                        <img src="image/digital.png" alt="" height="50" width="90" class="object-fit-cover rounded-3">
+                    </div>
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-2">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="text-secondary my-0 ">
+        <section class="placement pb-6" style="background:#142b31;">
+            <div class="row">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-10">
+                    <p class="text text-warning text-uppercase mt-5 mb-4 small fw-semibold">FAQ</p>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h1 class="heading text-light fw-bold lh-base mt-0 display-0" id="faq">Common questions</h1>
+                        </div>
+                        <div class="col-sm-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                    <div class="accordion " id="accordionExample">
+                        <div class="accordion-item border-0 bg-black text-light">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button  bg-black text-light" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Is this training suitable for BCA, B.Tech, Polytechnic and BSc CS students?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>₹5,000 covers 5-hour daily classes, study material, recovery classes, 1-year
+                                        online portal access, free web hosting, and project file guidance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 bg-black text-light">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-black text-light collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    What is the fee and what does it include?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Yes — the curriculum is designed to match the academic level and mandatory
+                                        internship requirements of all four courses.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 bg-black text-light">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-black text-light collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Is the training online or offline?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Both options are available — choose whichever fits your schedule and location in
+                                        Lucknow.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </section>
+        <section style="background:#142b31;">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                    <h1> asdlfjk</h1>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

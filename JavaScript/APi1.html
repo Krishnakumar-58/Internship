@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>how to use fetch</h1>
+    <div id="gallery">
+
+    </div>
+    <script>
+        async function loadImage() {
+            const response=await fetch("https://dummyjson.com/users");
+            const datas=await response.json();
+            // console.log(datas);
+            const gallery=document.getElementById("gallery");
+            datas.users.forEach(data=>{
+                gallery.innerHTML+=`
+                <div class="card">
+                    <h3>${data.firstName}</h3>
+                    <h3>${data.lastName}</h3>
+                    <h3>${data.email}</h3>
+                    <h3>${data.phone}</h3>
+                    <h3>${data.age}</h3>
+                    <h3>${data.image}</h3>
+                    </div>
+                    `;
+            })
+        }
+        loadImage();
+    </script>
+</body>
+</html>

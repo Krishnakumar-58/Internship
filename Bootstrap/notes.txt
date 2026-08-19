@@ -4,7 +4,7 @@ utility : mr-5 mt mb
 2. row: make a group for columns, horizontal
 3. col-4: 12/4= 3 columns 
 
- navbar classes:
+navbar classes:
     1. navbar: create base of navbar
     2. navbar-expand-lg: large screen pr horizontal, small screen
     humberger
@@ -27,3 +27,11 @@ Form + alert classes:
     2. form-control: padding and border of input box 
     3. mb-3: 
     4. alert alert-info: give message in a color(success, warning, error)
+
+
+
+
+
+
+    table 
+            name , size , location, color
